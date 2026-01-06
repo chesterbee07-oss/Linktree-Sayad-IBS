@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donasi Pesantren</title>
+
+    <link rel="icon" href="favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --primary: #198754;
+        --dark: #0f5132;
+        --soft: #f4f8f6;
+        --text: #333;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: linear-gradient(135deg, #0f5132, #00ff88);
+        min-height: 100vh;
+        padding: 20px;
+        color: var(--text);
+      }
+
+      .page {
+        max-width: 860px;
+        margin: auto;
+        background: #fff;
+        border-radius: 28px;
+        padding: 40px 32px 40px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+      }
+
+      /* ===== HEADER ===== */
+      .header {
+        text-align: center;
+        margin-bottom: 36px;
+      }
+
+      .header img {
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        object-fit: contain;
+        margin-bottom: 14px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+      }
+
+      .header h1 {
+        font-size: clamp(18px, 5vw, 30px);
+        font-weight: 700;
+        margin-bottom: 6px;
+        white-space: nowrap;
+      }
+
+      .header p {
+        font-size: clamp(13px, 3.5vw, 15px);
+        color: #555;
+      }
+
+      /* ===== SECTION ===== */
+      .section {
+        margin-bottom: 36px;
+      }
+
+      .section-title {
+        font-size: clamp(15px, 4.5vw, 20px);
+        font-weight: 700;
+        color: var(--dark);
+        margin-bottom: 14px;
+      }
+
+      .section-text {
+        font-size: 14px;
+        line-height: 1.8;
+        color: #555;
+      }
+
+      /* ===== IMPACT ===== */
+      .impact {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+      }
+
+      .impact-card {
+        background: var(--soft);
+        border-radius: 20px;
+        padding: 22px 18px;
+        text-align: center;
+      }
+
+      .impact-card span {
+        font-size: 30px;
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      .impact-card h3 {
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 6px;
+      }
+
+      .impact-card p {
+        font-size: 13px;
+        line-height: 1.6;
+        color: #555;
+      }
+
+      /* ===== DONATION ===== */
+      .donation-box {
+        background: var(--soft);
+        border-radius: 22px;
+        padding: 24px;
+        text-align: center;
+      }
+
+      .donation-box p {
+        font-size: 14px;
+        margin-bottom: 6px;
+        color: #555;
+      }
+
+      .rekening {
+        font-size: clamp(16px, 5vw, 20px);
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: var(--primary);
+        margin: 10px 0;
+      }
+
+      /* ===== CTA (AMAN & RAPI) ===== */
+      .cta-wrapper {
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 1px solid #eee;
+      }
+
+      .cta {
+        display: flex;
+        gap: 14px;
+      }
+
+      .btn {
+        flex: 1;
+        padding: 14px;
+        border-radius: 16px;
+        text-align: center;
+        font-weight: 600;
+        font-size: clamp(13px, 4vw, 15px);
+        text-decoration: none;
+        transition: 0.25s;
+        white-space: nowrap;
+      }
+
+      .btn-primary {
+        background: linear-gradient(135deg, var(--primary), #157347);
+        color: #fff;
+        box-shadow: 0 10px 28px rgba(25, 135, 84, 0.35);
+      }
+
+      .btn-outline {
+        background: #fff;
+        border: 2px solid var(--primary);
+        color: var(--primary);
+      }
+
+      .btn:active {
+        transform: scale(0.96);
+      }
+      .btn:hover {
+        background: #157347;
+        transform: scale(1.02);
+      }
+
+      @media (max-width: 480px) {
+        .cta {
+          flex-direction: column;
+        }
+      }
+
+      .back {
+        display: inline-block;
+        margin-top: 28px;
+        font-weight: 600;
+        color: var(--primary);
+        text-decoration: none;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <!-- HEADER -->
+      <div class="header">
+        <h1>Shodaqoh & Wakaf</h1>
+        <p>Bersama membangun pendidikan dan dakwah</p>
+      </div>
+
+      <!-- STORY -->
+      <div class="section">
+        <div class="section-title">Mengapa Bershodaqoh?</div>
+        <div class="section-text">
+          Donasi yang Anda titipkan akan digunakan untuk pengembangan pendidikan
+          santri, pembangunan sarana pesantren, serta kegiatan dakwah. Semoga
+          menjadi amal jariyah yang terus mengalir.
+        </div>
+      </div>
+
+      <!-- IMPACT -->
+      <div class="section">
+        <div class="section-title">Manfaat Donasi</div>
+        <div class="impact">
+          <div class="impact-card">
+            <span>📘</span>
+            <h3>Pendidikan</h3>
+            <p>Buku, kitab, dan sarana belajar santri</p>
+          </div>
+          <div class="impact-card">
+            <span>🏠</span>
+            <h3>Sarana</h3>
+            <p>Asrama, masjid, dan fasilitas pesantren</p>
+          </div>
+          <div class="impact-card">
+            <span>🍽️</span>
+            <h3>Kebutuhan Santri</h3>
+            <p>Makan, kesehatan, dan keseharian santri</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- DONATION -->
+      <div class="section">
+        <div class="section-title">Rekening Wakaf & Shodaqoh</div>
+        <div class="donation-box">
+          <p>Bank Rakyat Indonesia (BRI)</p>
+          <div class="rekening">1181 0100 0559 561</div>
+          <p>a.n. <strong>Saung Yatim & Dhuafa Sayad</strong></p>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="cta-wrapper">
+        <div class="cta">
+          <a
+            href="https://wa.me/6282260502658"
+            class="btn btn-primary"
+            target="_blank"
+          >
+            💬 Konfirmasi Donasi
+          </a>
+        </div>
+      </div>
+
+      <a href="index.html" class="back">← Kembali ke Menu Utama</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak Admin</title>
+
+    <link rel="icon" href="favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: linear-gradient(135deg, #0f5132, #00ff88);
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      .page {
+        max-width: 780px;
+        margin: auto;
+        background: #ffffff;
+        border-radius: 24px;
+        padding: 36px 28px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+      }
+
+      /* ================= HEADER ================= */
+      .header {
+        text-align: center;
+        margin-bottom: 26px;
+        overflow: hidden;
+      }
+
+      .header img {
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        object-fit: contain;
+        margin-bottom: 12px;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+      }
+
+      .header h1 {
+        font-size: clamp(14px, 6vw, 24px);
+        font-weight: 700;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      /* ================= INFO ================= */
+      .info {
+        font-size: 14px;
+        line-height: 1.75;
+        color: #444;
+        margin-bottom: 26px;
+      }
+
+      .info strong {
+        color: #0f5132;
+      }
+
+      /* ================= CONTACT CARDS ================= */
+      .contact-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 16px;
+        margin-bottom: 28px;
+      }
+
+      .card {
+        background: #f8f9fa;
+        border-radius: 18px;
+        padding: 18px 16px;
+        text-align: center;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      }
+
+      .card span {
+        font-size: clamp(22px, 6vw, 28px);
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      .card h3 {
+        font-size: clamp(13px, 4vw, 15px);
+        font-weight: 700;
+        margin-bottom: 6px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .card p {
+        font-size: 13px;
+        color: #555;
+        line-height: 1.6;
+      }
+
+      /* ================= CTA ================= */
+      .cta {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        margin-top: 10px;
+      }
+
+      .btn {
+        text-decoration: none;
+        text-align: center;
+        padding: 14px;
+        border-radius: 14px;
+        font-weight: 600;
+        font-size: clamp(13px, 4vw, 15px);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transition: all 0.25s ease;
+      }
+
+      .btn-primary {
+        background: linear-gradient(135deg, #198754, #06da77);
+        color: #fff;
+        box-shadow: 0 8px 20px rgba(25, 135, 84, 0.35);
+      }
+
+      .btn-outline {
+        border: 2px solid #198754;
+        color: #198754;
+      }
+
+      .btn:hover {
+        transform: translateY(-2px);
+      }
+
+      .btn:active {
+        transform: scale(0.97);
+      }
+
+      /* ================= BACK ================= */
+      .back {
+        display: inline-block;
+        margin-top: 32px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: clamp(13px, 4vw, 14px);
+        color: #198754;
+        white-space: nowrap;
+      }
+
+      .back:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <!-- HEADER -->
+      <div class="header">
+        <h1>Kontak Admin</h1>
+      </div>
+
+      <!-- INFO -->
+      <div class="info">
+        <p>
+          Untuk informasi lebih lanjut mengenai
+          <strong
+            >PPDB, kegiatan pesantren, kegiatan sekolah, atau keperluan
+            lainnya,</strong
+          >
+          silakan hubungi kami melalui kontak berikut:
+        </p>
+      </div>
+
+      <!-- CONTACT CARDS -->
+      <div class="contact-cards">
+        <div class="card">
+          <span>📱</span>
+          <h3>WhatsApp</h3>
+          <p>Jam Operasional<br />08.00 – 16.00 WIB</p>
+        </div>
+        <div class="card">
+          <span>☎️</span>
+          <h3>Telepon</h3>
+          <p>Hubungi ketika berada dalam<br />Jam Kerja</p>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="cta">
+        <a
+          href="https://wa.me/6281199895855"
+          class="btn btn-primary"
+          target="_blank"
+        >
+          💬 WhatsApp Admin Sekolah
+        </a>
+        <a
+          href="https://wa.me/6281234306662"
+          class="btn btn-primary"
+          target="_blank"
+        >
+          💬 WhatsApp Admin Pesantren
+        </a>
+      </div>
+
+      <!-- BACK -->
+      <a href="index.html" class="back">← Kembali ke Menu Utama</a>
+    </div>
+  </body>
+</html>

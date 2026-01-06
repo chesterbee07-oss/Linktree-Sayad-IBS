@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lokasi Pesantren</title>
+
+    <link rel="icon" href="favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: linear-gradient(135deg, #0f5132, #00ff88);
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      .page {
+        max-width: 780px;
+        margin: auto;
+        background: #ffffff;
+        border-radius: 24px;
+        padding: 36px 28px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+      }
+
+      /* ================= HEADER ================= */
+      .header {
+        text-align: center;
+        margin-bottom: 24px;
+        overflow: hidden;
+      }
+
+      .header img {
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        object-fit: contain;
+        margin-bottom: 12px;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+      }
+
+      .header h1 {
+        font-size: clamp(14px, 6vw, 24px);
+        font-weight: 700;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1.2;
+      }
+
+      /* ================= INFO ================= */
+      .info {
+        margin-bottom: 22px;
+        font-size: 14px;
+        line-height: 1.75;
+        color: #444;
+      }
+
+      .info strong {
+        color: #0f5132;
+      }
+
+      /* ================= LOCATION CARDS ================= */
+      .location-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 16px;
+        margin-bottom: 28px;
+      }
+
+      .card {
+        background: #f8f9fa;
+        border-radius: 18px;
+        padding: 16px;
+        text-align: center;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      }
+
+      .card span {
+        font-size: clamp(22px, 6vw, 28px);
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      .card p {
+        font-size: 13px;
+        line-height: 1.6;
+        color: #444;
+      }
+
+      /* ================= MAP TITLE ================= */
+      .map-title {
+        font-size: clamp(14px, 4.5vw, 18px);
+        font-weight: 700;
+        color: #0f5132;
+        margin-bottom: 12px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      /* ================= MAP ================= */
+      .map-wrapper {
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%; /* 16:9 */
+        border-radius: 18px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        margin-bottom: 28px;
+      }
+
+      .map-wrapper iframe {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      /* ================= CTA ================= */
+      .cta {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        margin-top: 10px;
+      }
+
+      .btn {
+        text-decoration: none;
+        text-align: center;
+        padding: 14px;
+        border-radius: 14px;
+        font-weight: 600;
+        font-size: clamp(13px, 4vw, 15px);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transition: all 0.25s ease;
+      }
+
+      .btn-primary {
+        background: linear-gradient(135deg, #198754, #157347);
+        color: #fff;
+        box-shadow: 0 8px 20px rgba(25, 135, 84, 0.35);
+      }
+
+      .btn-outline {
+        border: 2px solid #198754;
+        color: #198754;
+      }
+
+      .btn:hover {
+        transform: translateY(-2px);
+      }
+
+      .btn:active {
+        transform: scale(0.97);
+      }
+
+      /* ================= BACK ================= */
+      .back {
+        display: inline-block;
+        margin-top: 32px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: clamp(13px, 4vw, 14px);
+        color: #198754;
+        white-space: nowrap;
+      }
+
+      .back:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <!-- HEADER -->
+      <div class="header">
+        <h1>Lokasi Pesantren</h1>
+      </div>
+
+      <!-- INFO -->
+      <div class="info">
+        <p>
+          <strong>Pondok Pesantren Modern</strong>
+          <strong>Sayad Islamic Boarding School</strong> berlokasi di:
+        </p>
+        <p>
+          Jl. Leweungsereuh Dsn. Babakan Tamiang RT.018/RW.08, Ds.
+          Lemahmulya,<br />
+          Kecamatan Majalaya, Kabupaten Karawang,<br />
+          Provinsi Jawa Barat
+        </p>
+      </div>
+
+      <!-- LOCATION CARDS -->
+      <div class="location-cards">
+        <div class="card">
+          <span>🛣️</span>
+          <p>
+            <strong>Akses Mudah</strong><br />Dapat dilalui kendaraan roda dua &
+            empat
+          </p>
+        </div>
+        <div class="card">
+          <span>🕌</span>
+          <p>
+            <strong>Lingkungan Islami</strong><br />Dekat masjid & pemukiman
+            warga
+          </p>
+        </div>
+        <div class="card">
+          <span>🚍</span>
+          <p><strong>Transportasi</strong><br />Dilalui angkutan umum</p>
+        </div>
+      </div>
+
+      <!-- PETUNJUK -->
+      <div class="info">
+        <p><strong>Petunjuk Arah Singkat:</strong></p>
+        <p>
+          <strong>Dari Terminal Klari</strong>, ambil arah menuju Citra Kebun
+          Mas (CKM) lalu ikuti jalan hingga melewati jembatan, lalu belok kanan
+          ke arah Leweungsereuh ±10 menit. Lokasi pesantren berada disebelah
+          kiri jalan utama Contoh.
+        </p>
+      </div>
+
+      <!-- MAP -->
+      <h2 class="map-title">Peta Lokasi</h2>
+      <div class="map-wrapper">
+        <!-- GANTI KOORDINAT SESUAI LOKASI ASLI -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1355.3796678184474!2d107.36924052853453!3d-6.335232199601741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6977bcd3f49149%3A0xe1ddac6ecb0f2d7d!2sSayad%20Islamic%20Boarding%20School!5e1!3m2!1sid!2sid!4v1767558143485!5m2!1sid!2sid"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+
+      <!-- CTA -->
+      <div class="cta">
+        <a
+          href="https://maps.google.com/?q=-6.200000,106.816666"
+          class="btn btn-primary"
+          target="_blank"
+        >
+          🧭 Petunjuk Arah ke Pesantren
+        </a>
+      </div>
+
+      <!-- BACK -->
+      <a href="index.html" class="back">← Kembali ke Menu Utama</a>
+    </div>
+  </body>
+</html>

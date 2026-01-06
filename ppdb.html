@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PPDB Santri Baru</title>
+
+    <link rel="icon" href="favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: linear-gradient(135deg, #0f5132, #00ff88);
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      .page {
+        max-width: 780px;
+        margin: auto;
+        background: #fff;
+        border-radius: 24px;
+        padding: 36px 28px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+      }
+
+      /* ================= HEADER ================= */
+      .header {
+        text-align: center;
+        margin-bottom: 24px;
+        max-width: 100%;
+        overflow: hidden;
+      }
+
+      .header img {
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        object-fit: contain;
+        margin-bottom: 12px;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+      }
+
+      .header h1 {
+        font-size: clamp(14px, 6vw, 24px);
+        font-weight: 700;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1.2;
+      }
+
+      /* ================= HIGHLIGHT ================= */
+      .highlight {
+        background: linear-gradient(135deg, #e9f5ef, #ffffff);
+        border-left: 5px solid #198754;
+        padding: 14px 16px;
+        border-radius: 14px;
+        margin-bottom: 28px;
+        font-size: clamp(12px, 3.5vw, 14px);
+        font-weight: 600;
+        color: #198754;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      /* ================= SECTION ================= */
+      .section {
+        margin-bottom: 32px;
+      }
+
+      .section h2 {
+        font-size: clamp(14px, 4.5vw, 18px);
+        font-weight: 700;
+        color: #0f5132;
+        margin-bottom: 12px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .section p,
+      .section li {
+        font-size: 14px;
+        line-height: 1.75;
+        color: #444;
+      }
+
+      ul,
+      ol {
+        padding-left: 18px;
+      }
+
+      .divider {
+        border: none;
+        height: 1px;
+        background: linear-gradient(to right, transparent, #ddd, transparent);
+        margin-top: 26px;
+      }
+
+      /* ================= CTA ================= */
+      .cta {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        margin-top: 18px;
+      }
+
+      .btn {
+        text-decoration: none;
+        text-align: center;
+        padding: 14px;
+        border-radius: 14px;
+        font-weight: 600;
+        font-size: clamp(13px, 4vw, 15px);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transition: all 0.25s ease;
+      }
+
+      .btn-primary {
+        background: linear-gradient(135deg, #198754, #157347);
+        color: #fff;
+        box-shadow: 0 8px 20px rgba(25, 135, 84, 0.35);
+      }
+
+      .btn-outline {
+        border: 2px solid #198754;
+        color: #198754;
+      }
+
+      .btn:hover {
+        transform: translateY(-2px);
+      }
+
+      .btn:active {
+        transform: scale(0.97);
+      }
+
+      /* ================= BACK ================= */
+      .back {
+        display: inline-block;
+        margin-top: 32px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: clamp(13px, 4vw, 14px);
+        color: #198754;
+        white-space: nowrap;
+      }
+
+      .back:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <!-- HEADER -->
+      <div class="header">
+        <h1>PENDAFTARAN</h1>
+      </div>
+
+      <!-- HIGHLIGHT -->
+      <div class="highlight">📢 PENDAFTARAN SANTRI/SISWA BARU</div>
+
+      <!-- PENDAHULUAN -->
+      <div class="section">
+        <p>
+          Yayasan Pendidikan Islam
+          <strong>Sayad Islamic Boarding School</strong> membuka Penerimaan
+          Peserta Didik Baru (PPDB) bagi calon santri/siswa yang ingin menempuh
+          pendidikan Islam terpadu.
+        </p>
+        <hr class="divider" />
+      </div>
+
+      <!-- SYARAT -->
+      <div class="section">
+        <h2>Syarat Pendaftaran</h2>
+        <ul>
+          <li>Muslim / Muslimah</li>
+          <li>Sehat jasmani dan rohani</li>
+          <li>Siap mengikuti peraturan pesantren/sekolah</li>
+          <li>Melengkapi berkas administrasi</li>
+          <li>Pendaftaran Pesantren (SD - SMA)</li>
+          <li>Pendaftaran Sekolah SMPIT (Fullday/Non Mondok)</li>
+        </ul>
+        <hr class="divider" />
+      </div>
+
+      <!-- ALUR -->
+      <div class="section">
+        <h2>Alur Pendaftaran</h2>
+        <ol>
+          <li>Mengisi formulir pendaftaran online</li>
+          <li>Verifikasi data offline</li>
+          <li>Seleksi / wawancara</li>
+          <li>Pengumuman hasil</li>
+        </ol>
+        <hr class="divider" />
+      </div>
+
+      <!-- CTA -->
+      <div class="section">
+        <h2>Daftar Sekarang</h2>
+        <div class="cta">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeRngQbetU3eLp5_1tByVOeCnkqou7v-U_s1bhewKT8UdVT5A/viewform?usp=dialog"
+            class="btn btn-primary"
+            target="_blank"
+          >
+            📝 Isi Formulir Pendaftaran
+          </a>
+        </div>
+      </div>
+
+      <a href="index.html" class="back">← Kembali ke Menu Utama</a>
+    </div>
+  </body>
+</html>

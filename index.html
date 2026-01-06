@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linktree Sayad</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: linear-gradient(135deg, #016e3b, #00ff88, #139659);
+        background-size: 300% 300%;
+        animation: gradientMove 3s ease infinite;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      @keyframes gradientMove {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .container {
+        width: 100%;
+        max-width: 420px;
+        margin: 20px;
+        background: #fff;
+        padding: 32px 24px;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      }
+
+      .logo {
+        width: 96px;
+        height: 96px;
+        margin: 0 auto 16px;
+        border-radius: 50%;
+        background: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        overflow: hidden;
+      }
+      @media (min-width: 768px) {
+        .logo {
+          width: 110px;
+          height: 110px;
+        }
+      }
+      .logo {
+        transition: transform 0.3s ease;
+      }
+
+      .logo:hover {
+        transform: scale(1.05);
+      }
+
+      .logo img {
+        width: 85%;
+        height: 85%;
+        object-fit: contain;
+      }
+
+      h1 {
+        font-size: clamp(16px, 3.8vw, 18px);
+        font-weight: 700;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+        margin-bottom: 8px;
+      }
+
+      h2 {
+        font-size: clamp(16px, 3.8vw, 22px);
+        font-weight: 700;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+        margin-bottom: 8px;
+      }
+
+      .motto {
+        font-size: 13px;
+        color: #666;
+        margin-bottom: 25px;
+      }
+
+      .link {
+        display: block;
+        text-decoration: none;
+        background: #198754;
+        color: #fff;
+        padding: 14px 16px;
+        border-radius: 12px;
+        margin-bottom: 14px;
+        font-weight: 600;
+        font-size: clamp(14px, 4vw, 15px);
+        transition: all 0.25s ease;
+      }
+
+      .link:hover {
+        background: #157347;
+        transform: scale(1.02);
+      }
+
+      footer {
+        margin-top: 20px;
+        font-size: 11px;
+        color: #999;
+      }
+      @media (min-width: 768px) {
+        .container {
+          padding: 40px 32px;
+        }
+
+        .link {
+          padding: 16px;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        body {
+          background-attachment: fixed;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="logosayad.png" alt="Logo Pesantren" />
+      </div>
+
+      <h1>Yayasan Pendidikan Islam</h1>
+      <h2>Sayad Islamic Boarding School</h2>
+      <p class="motto">Pondok Pesantren Modern - SMPIT - SMK</p>
+
+      <a href="ppdb.html" class="link"
+        >📝 <strong>Pendaftaran Santri/Siswa Baru</strong></a
+      >
+      <a href="profil.html" class="link"> 📘 Profil YPI Sayad IBS </a>
+      <a href="lokasi.html" class="link"
+        >📍 <strong>Lokasi Pesantren/Sekolah</strong></a
+      >
+      <a href="kontak.html" class="link">📱 <strong>WhatsApp Admin</strong></a>
+      <a
+        href="https://www.instagram.com/sayadboarding/?utm_source=ig_web_button_share_sheet"
+        class="link"
+        >📸 <strong>Instagram</strong></a
+      >
+      <a
+        href="https://www.tiktok.com/@mesibs?is_from_webapp=1&sender_device=pc"
+        class="link"
+        >🎥 <strong>TikTok</strong></a
+      >
+      <a href="donasi.html" class="link">🤲 <strong>Donasi / Infaq</strong></a>
+
+      <footer>© 2026 YPI Sayad IBS • Santri Kreatif</footer>
+    </div>
+  </body>
+</html>
